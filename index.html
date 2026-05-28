@@ -16,6 +16,7 @@
         <div class="nav-links">
           <a href="#curriculum">Curriculum</a>
           <a href="#sections">Sections</a>
+          <a href="#practice">Practice</a>
           <a href="#materials">Materials</a>
           <a href="#study">Study</a>
         </div>
@@ -71,6 +72,7 @@
             <button class="active" type="button" data-filter="all">All</button>
             <button type="button" data-filter="lectures">Lectures</button>
             <button type="button" data-filter="sections">Sections</button>
+            <button type="button" data-filter="practice">Practice</button>
           </div>
         </div>
       </section>
@@ -91,6 +93,46 @@
           <p>All provided section files are included as original downloads, with searchable notes where text extraction is available.</p>
         </div>
         <div class="section-grid" id="sectionGrid"></div>
+      </section>
+
+      <section class="content-band practice-band" id="practice">
+        <div class="section-heading">
+          <p class="eyebrow">Practical Lab</p>
+          <h2>Section Analysis and Solving Playbook</h2>
+          <p>
+            Each section is translated into the practical method you should use in exams: model inputs,
+            random-number mapping, calculations, checks, and mistakes to avoid.
+          </p>
+        </div>
+        <div class="practice-grid" id="practiceGrid"></div>
+      </section>
+
+      <section class="tool-band" aria-label="Practice calculators">
+        <div class="tool-layout">
+          <div>
+            <p class="eyebrow">Fast Checks</p>
+            <h2>Mini Calculators</h2>
+            <p>
+              Use these to verify the core arithmetic behind the section problems before doing a full simulation table.
+            </p>
+          </div>
+          <div class="calculator-grid">
+            <form class="calc-card" id="newsboyCalc">
+              <h3>Newsboy Profit</h3>
+              <label>Buying quantity <input type="number" name="quantity" value="80" min="0" /></label>
+              <label>Demand <input type="number" name="demand" value="70" min="0" /></label>
+              <label>Selling price <input type="number" name="sell" value="25" min="0" step="0.01" /></label>
+              <label>Buying cost <input type="number" name="cost" value="15" min="0" step="0.01" /></label>
+              <output id="newsboyResult"></output>
+            </form>
+            <form class="calc-card" id="queueCalc">
+              <h3>M/M/1 Queue</h3>
+              <label>Arrival rate lambda <input type="number" name="lambda" value="20" min="0" step="0.01" /></label>
+              <label>Service rate mu <input type="number" name="mu" value="25" min="0" step="0.01" /></label>
+              <output id="queueResult"></output>
+            </form>
+          </div>
+        </div>
       </section>
 
       <section class="materials-band" id="materials">
