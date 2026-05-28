@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Simulation and Modeling Curriculum</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <nav class="nav-shell" aria-label="Main navigation">
+        <a class="brand" href="#top">
+          <span class="brand-mark">SM</span>
+          <span>Simulation & Modeling</span>
+        </a>
+        <div class="nav-links">
+          <a href="#curriculum">Curriculum</a>
+          <a href="#sections">Sections</a>
+          <a href="#materials">Materials</a>
+          <a href="#study">Study</a>
+        </div>
+      </nav>
+
+      <section class="hero">
+        <img src="assets/simulation-hero.png" alt="" class="hero-image" />
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">System Modelling and Simulation</p>
+          <h1>Simulation and Modeling</h1>
+          <p class="hero-copy">
+            A complete course website for the lecture curriculum and section problem sheets:
+            concepts, probability, statistical ideas, random numbers, queueing, and discrete-event simulation.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#curriculum">Explore curriculum</a>
+            <a class="button secondary" href="materials/Simulation.pdf" target="_blank" rel="noreferrer">Open lecture PDF</a>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="overview-band" aria-label="Course overview">
+        <div class="overview-grid">
+          <article>
+            <span class="metric" id="moduleCount">6</span>
+            <span class="label">lecture modules</span>
+          </article>
+          <article>
+            <span class="metric" id="sectionCount">9</span>
+            <span class="label">section files</span>
+          </article>
+          <article>
+            <span class="metric" id="pageCount">73</span>
+            <span class="label">lecture pages</span>
+          </article>
+          <article>
+            <span class="metric">100</span>
+            <span class="label">course marks mapped</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="toolbar-band" aria-label="Course search">
+        <div class="toolbar">
+          <label class="search-box">
+            <span>Search</span>
+            <input id="searchInput" type="search" placeholder="Try queueing, Poisson, CDF, newsboy..." />
+          </label>
+          <div class="segmented" aria-label="Content filter">
+            <button class="active" type="button" data-filter="all">All</button>
+            <button type="button" data-filter="lectures">Lectures</button>
+            <button type="button" data-filter="sections">Sections</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-band" id="curriculum">
+        <div class="section-heading">
+          <p class="eyebrow">Lecture Path</p>
+          <h2>Full Curriculum</h2>
+          <p>The lecture PDF is organized into study modules with every extracted page preserved below each topic.</p>
+        </div>
+        <div class="module-grid" id="moduleGrid"></div>
+      </section>
+
+      <section class="content-band alt" id="sections">
+        <div class="section-heading">
+          <p class="eyebrow">Problem Practice</p>
+          <h2>Section Materials</h2>
+          <p>All provided section files are included as original downloads, with searchable notes where text extraction is available.</p>
+        </div>
+        <div class="section-grid" id="sectionGrid"></div>
+      </section>
+
+      <section class="materials-band" id="materials">
+        <div class="materials-layout">
+          <div>
+            <p class="eyebrow">Original Sources</p>
+            <h2>Course File Library</h2>
+            <p>
+              The site keeps the original lecture PDF, scanned section sheets, and PPTX deck in the repository so the
+              curriculum remains complete even when a document is image-based.
+            </p>
+          </div>
+          <div class="file-list" id="fileList"></div>
+        </div>
+      </section>
+
+      <section class="study-band" id="study">
+        <div class="study-layout">
+          <div class="study-copy">
+            <p class="eyebrow">Exam Map</p>
+            <h2>Grading and Revision Focus</h2>
+            <p>
+              Use the curriculum modules for lecture study and the section materials for solved simulations and random-number mapping practice.
+            </p>
+          </div>
+          <div class="grading-card">
+            <h3>Grading Policy</h3>
+            <ul id="gradingList"></ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Built from the provided Simulation and Modeling lecture and section files.</p>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="assets/course-data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
